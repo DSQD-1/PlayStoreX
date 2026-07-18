@@ -5,6 +5,7 @@ const cors = require("cors");
 
 
 const usersRouter = require("./routes/users");
+const testRouter = require("./routes/test");
 
 
 const app = express();
@@ -15,8 +16,12 @@ app.use(cors());
 app.use(express.json());
 
 
-
+// Users API
 app.use("/api/users", usersRouter);
+
+
+// Test API
+app.use("/api/test", testRouter);
 
 
 
