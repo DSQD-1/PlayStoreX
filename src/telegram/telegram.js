@@ -1,33 +1,22 @@
-const tg = window.Telegram?.WebApp;
+export function getTelegramUser() {
+
+  if (
+    window.Telegram &&
+    window.Telegram.WebApp
+  ) {
+
+    const tg =
+      window.Telegram.WebApp;
 
 
-export function initTelegram() {
+    tg.ready();
 
-  if (!tg) {
 
-    console.log("Telegram WebApp не найден");
-
-    return null;
+    return tg.initDataUnsafe.user || null;
 
   }
 
 
-  tg.ready();
-
-  tg.expand();
-
-
-  return tg;
-
-}
-
-
-
-export function getTelegramUser() {
-
-  if (!tg) return null;
-
-
-  return tg.initDataUnsafe?.user || null;
+  return null;
 
 }
