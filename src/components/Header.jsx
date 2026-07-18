@@ -1,3 +1,6 @@
+import UserProfile from "./UserProfile";
+
+
 function Header() {
 
   return (
@@ -6,22 +9,13 @@ function Header() {
 
 
       <div className="logo">
+
         🎮 PlayStoreX
-      </div>
-
-
-      <div className="profile">
-
-        <span>
-          👤 Гость
-        </span>
-
-
-        <span className="balance">
-          💰 0 ₽
-        </span>
 
       </div>
+
+
+      <UserProfile />
 
 
     </header>
