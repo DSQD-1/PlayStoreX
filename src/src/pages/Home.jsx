@@ -19,11 +19,9 @@ function Home() {
           🎮 Robux
         </div>
 
-
         <div className="card">
           🔥 Игры
         </div>
-
 
         <div className="card">
           🛒 Маркет
