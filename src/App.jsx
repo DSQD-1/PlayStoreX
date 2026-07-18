@@ -1,27 +1,44 @@
-import { useEffect } from "react";
-
 import Header from "./components/Header";
-import Home from "./src/pages/Home";
 
-import { initTelegram } from "./telegram/telegram";
+import TelegramAuth from "./components/TelegramAuth";
 
 
 function App() {
-
-  useEffect(() => {
-
-    initTelegram();
-
-  }, []);
 
 
   return (
 
     <div className="app">
 
+
       <Header />
 
-      <Home />
+
+      <main>
+
+
+        <TelegramAuth />
+
+
+        <section className="hero">
+
+
+          <h1>
+            🎮 PlayStoreX
+          </h1>
+
+
+          <p>
+            Маркетплейс игр, аккаунтов и Robux
+          </p>
+
+
+        </section>
+
+
+
+      </main>
+
 
     </div>
 
