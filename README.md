@@ -14,5 +14,3 @@ PlayStoreX — игровой маркетплейс в Telegram.
 - 👑 Админ-панель
 - 🎁 Промокоды
 - 🎮 Быстрая покупка Robux
-
-Developed by DSQD.
